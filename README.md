@@ -54,18 +54,21 @@
 
 ### 시스템 구조도
 
-![image.png](attachment:d7ea090a-fbf8-4067-b705-b81343668dde:image.png)
+![image](https://github.com/user-attachments/assets/32395750-39f6-4592-8f48-0e6c4e2e34f3)
+
 
 - pdf의 형태로 데이터가 들어오게 되고, 해당 pdf를 text형태로 파싱한 다음, 원문 텍스트의 길이에 따라 1차, 2차, 요약을 진행하게 됩니다.
 - 이후 한번 요약된 요약문을 재작성하여 가독성을 높이고 청크간 연결성을 강화한 다음, 최종 요약문을 바탕으로 임베딩과 키워드 추출을 진행합니다.
 
-![image.png](attachment:d450b712-f9e3-457e-b2ec-811163e81272:image.png)
+![image](https://github.com/user-attachments/assets/c8d3adc0-9342-4352-bb26-befed85a734b)
+
 
 - 보고서의 핵심 내용(문제특허, 대응전략, 국가별 특이사항 등)을 유지하며 생성된 요약문
 
 ### 키워드 추출
 
-![image.png](attachment:389f3ab0-f4b9-44f7-8e20-ead7f0fd4f11:image.png)
+![image](https://github.com/user-attachments/assets/22510912-4f27-47b5-8585-15cb333d77d1)
+
 
 - 최종 생성된 요약문을 기반으로 키워드 추출 진행
 - 기존 TF/IDF 대비 키워드의 정확도 향상
